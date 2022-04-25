@@ -1,0 +1,25 @@
+{
+  "name": "projeto11-tweteroo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Meu primeiro projeto back-end será a construção da API do Tweteroo, um clone do Twitter! Aqui apenas farei o back-end enquanto todo o front já foi disponibilizado pronto.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvasquesdev/projeto11-tweteroo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvasquesdev/projeto11-tweteroo/issues"
+  },
+  "homepage": "https://github.com/gvasquesdev/projeto11-tweteroo#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
