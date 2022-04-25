@@ -13,57 +13,57 @@ let tweets = [
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '100',
+        tweetId: '100',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '110',
+        tweetId: '110',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '120',
+        tweetId: '120',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '130',
+        tweetId: '130',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '140',
+        tweetId: '140',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '150',
+        tweetId: '150',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '160',
+        tweetId: '160',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '170',
+        tweetId: '170',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '180',
+        tweetId: '180',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '190',
+        tweetId: '190',
     },
     {
         username: 'bobesponja',
         avatar: 'https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info',
-        tweet: '200',
+        tweetId: '200',
     },
 ];
 
@@ -130,7 +130,7 @@ app.get('/tweets/:username', (req, res) => {
         );
         res.status(200).send(tweetsUser);
     } else {
-        res.status(404).send('User not found');
+        res.status(404).send('Usuário não encontrado');
     }
 });
 
@@ -149,7 +149,7 @@ app.post('/tweets', (req, res) => {
         tweets.push(tweet);
         res.status(201).send('OK');
     } else {
-        res.status(400).send('Missing username or tweet');
+        res.status(400).send('Falta usuário ou tweet');
     }
 });
 
